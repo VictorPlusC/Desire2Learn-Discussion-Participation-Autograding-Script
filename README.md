@@ -1,5 +1,7 @@
 # Desire2Learn-Discussion-Participation-Autograding-Script
 
+Requirements: .csv file of the D2L/A2L gradebook, .txt version of all .html source codes from the discussion pages
+
 Usage:
 
 1) Run Python script
