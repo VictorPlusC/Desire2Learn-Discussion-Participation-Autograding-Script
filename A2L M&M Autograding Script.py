@@ -1,7 +1,7 @@
 """
 Avenue to Learn Discussion Participation Autograder
-Last edited: January 23, 2018
-Version: 1.1
+Last edited: January 26, 2018
+Version: 1.2
 """
 
 #Before running:
@@ -83,8 +83,9 @@ Process is as follows:
 1) Retrieves set of student names from the participants function
 2) Retrieve student name per line in the gradebook
 3) Looks up student name in the set of student names
-4) Assigns a student grade of 0.5 or 0 if a grade does not currently exist
-   for the student, depending on whether their name was in the set or not
+4) Assigns a student grade of 0.5 (CHANGE ACCORDING TO GRADE BEING ASSIGNED!) or
+   0 if a grade does not currently exist for the student, depending on whether
+   their name was in the set or not
 5) Stores student grade in a temporary array that is identical to the original
    .csv file to be eventually all be copied at the same time to the file to
    write to
@@ -106,6 +107,10 @@ def processCSV(toReadCSV: "CSV file to read",
                     name = row[2]+" "+row[1]
                     if name in names:
                         print(name+ " | Assigned grade = 0.5")
+## NOTE:
+#  Please change the below value that row[3] is being assigned to in the case
+#  that the discussion participation grade is not 0.5/0.5! Change to the assignment
+#  value according to the grade being used!
                         row[3] = 0.5
                     else:
                         print(name+ " | Assigned grade = 0")
