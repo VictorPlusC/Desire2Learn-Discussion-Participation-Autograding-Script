@@ -2,9 +2,22 @@
 
 Requirements: .csv file of the D2L/A2L gradebook, .txt version of all .html source codes from the discussion pages
 
-Usage:
+Before running:
+1) Retrieve .csv from Avenue gradebook":
+    When exporting .csv from Avenue:
+    1) Under Key Field, select only Org Defined ID
+    2) Under Grade Values, select only Points grade
+    3) Under User Details, select only Last Name and First Name
+    4) Uncheck all graded items with the exception of the item being graded
+    5) Export
 
-1) Run Python script
-2) Inside the quotations, write the respective names of the files you plan on using; extensions are not necessary, i.e. if you want to read from "source.txt", just writing "source" is sufficient.
-3) Format:
-processCSV(".CSV FILE TO READ FROM", ".CSV FILE TO WRITE TO", ".TXT FILE WITH DISCUSSION SOURCE CODE")
+2) Retrieve all .html source code from discussion pages
+   and copy it all into a single text file
+
+3) Make sure both files are in the same directory as the script. You may now run it.
+
+Example usage:
+
+gradebook
+newgradebook
+source
