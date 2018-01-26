@@ -16,7 +16,8 @@ Before running:
 
 3) Make sure both files are in the same directory as the script. You may now run it.
 
-Example usage:
+Example user input:
+
 
 gradebook
 
