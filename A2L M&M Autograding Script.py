@@ -125,7 +125,7 @@ def processCSV(toReadCSV: "CSV file to read",
                     
             writer.writerows(newContents)
             z = csv.reader(reader, delimiter='\t')
-            z = csv.reader(writer, delimiter='\t')
+            z0 = csv.reader(writer, delimiter='\t')
             print('\nNew CSV created; grading complete!')
 
 def main():
