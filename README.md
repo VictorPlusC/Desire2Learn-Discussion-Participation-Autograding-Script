@@ -19,8 +19,8 @@ Before running:
 Example user input:
 
 
-gradebook
+```gradebook```
 
-newgradebook
+```newgradebook```
 
-source
+```source```
